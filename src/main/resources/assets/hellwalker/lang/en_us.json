@@ -1,0 +1,13 @@
+{
+  "itemGroup.hellwalker": "Example Mod Tab",
+  "block.hellwalker.example_block": "Example Block",
+  "item.hellwalker.example_item": "Example Item",
+
+  "hellwalker.configuration.title": "Hellwalker Configs",
+  "hellwalker.configuration.section.hellwalker.common.toml": "Hellwalker Configs",
+  "hellwalker.configuration.section.hellwalker.common.toml.title": "Hellwalker Configs",
+  "hellwalker.configuration.items": "Item List",
+  "hellwalker.configuration.logDirtBlock": "Log Dirt Block",
+  "hellwalker.configuration.magicNumberIntroduction": "Magic Number Text",
+  "hellwalker.configuration.magicNumber": "Magic Number"
+}
