@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hellwalker:item/unwilling_spawn_egg"
+  }
+}

@@ -1,0 +1,44 @@
+package com.jinxedstudios.hellwalker.entities.possessed_scientist;
+
+import com.jinxedstudios.hellwalker.Hellwalker;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
+import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.constant.DataTickets;
+import software.bernie.geckolib.model.GeoModel;
+import software.bernie.geckolib.model.data.EntityModelData;
+import software.bernie.geckolib.renderer.GeoRenderer;
+
+
+public class PossessedScientistModel extends GeoModel<PossessedScientistEntity> {
+
+    @Override
+    public ResourceLocation getModelResource(PossessedScientistEntity animatable, @Nullable GeoRenderer<PossessedScientistEntity> renderer) {
+        return ResourceLocation.fromNamespaceAndPath(Hellwalker.MODID, "geo/entity/possessed_scientist.geo.json");
+    }
+
+    @Override
+    public ResourceLocation getTextureResource(PossessedScientistEntity animatable, @Nullable GeoRenderer<PossessedScientistEntity> renderer) {
+        return ResourceLocation.fromNamespaceAndPath(Hellwalker.MODID, "textures/entity/possessed_scientist.png");
+    }
+
+    @Override
+    public ResourceLocation getAnimationResource(PossessedScientistEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(Hellwalker.MODID, "animations/entity/possessed_scientist.animation.json");
+    }
+
+    @Override
+    public void setCustomAnimations(PossessedScientistEntity animatable, long instanceId, AnimationState<PossessedScientistEntity> animationState) {
+        GeoBone head = getAnimationProcessor().getBone("head");
+
+        if (head != null) {
+            EntityModelData entityData = animationState.getData(DataTickets.ENTITY_MODEL_DATA);
+
+            head.setRotX(entityData.headPitch() * Mth.DEG_TO_RAD);
+            head.setRotY(entityData.netHeadYaw() * Mth.DEG_TO_RAD);
+        }
+    }
+}
+

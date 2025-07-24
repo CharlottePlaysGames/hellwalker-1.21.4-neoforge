@@ -1,13 +1,30 @@
 {
-  "itemGroup.hellwalker": "Example Mod Tab",
+  "itemGroup.hellwalker_items": "UAC Resources",
+  "itemGroup.hellwalker_blocks": "UAC Structure Materials",
+  "itemGroup.hellwalker_weapons": "Slayer's Arsenal",
+  "itemGroup.hellwalker_armor": "Praetor Tech",
+  "itemGroup.hellwalker_enemies": "Demonic Entities",
   "block.hellwalker.example_block": "Example Block",
   "item.hellwalker.example_item": "Example Item",
+  "item.hellwalker.blue_access_key": "Blue Access Key",
+  "item.hellwalker.yellow_access_key": "Yellow Access Key",
+  "item.hellwalker.praetor_token": "Praetor Token",
+  "item.hellwalker.data_log": "Data Log",
+  "block.hellwalker.ancient_stone_bricks": "Ancient Stone Bricks",
+  "block.hellwalker.mars_sand": "Mars Sand",
 
-  "hellwalker.configuration.title": "Hellwalker Configs",
-  "hellwalker.configuration.section.hellwalker.common.toml": "Hellwalker Configs",
-  "hellwalker.configuration.section.hellwalker.common.toml.title": "Hellwalker Configs",
+  "hellwalker.configuration.title": "Hellwalker Engine Configs",
+  "hellwalker.configuration.section.hellwalker.common.toml": "Hellwalker Engine Configs",
+  "hellwalker.configuration.section.hellwalker.common.toml.title": "Hellwalker Engine Configs",
   "hellwalker.configuration.items": "Item List",
-  "hellwalker.configuration.logDirtBlock": "Log Dirt Block",
+  "hellwaker.configuration.logDirtBlock": "Log Dirt Block",
   "hellwalker.configuration.magicNumberIntroduction": "Magic Number Text",
-  "hellwalker.configuration.magicNumber": "Magic Number"
+  "hellwaker.configuration.magicNumber": "Magic Number",
+
+  "key.categories.slayer": "Slayer Controls",
+
+  "entity.hellwalker.possessed_scientist": "Possessed Scientist",
+  "item.hellwalker.possessed_scientist_spawn_egg": "Possessed Scientist Spawn Egg",
+  "entity.hellwalker.unwilling": "Unwilling",
+  "item.hellwalker.unwilling_spawn_egg": "Unwilling Spawn Egg"
 }

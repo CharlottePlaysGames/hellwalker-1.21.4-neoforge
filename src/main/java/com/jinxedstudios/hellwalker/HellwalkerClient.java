@@ -1,6 +1,9 @@
 package com.jinxedstudios.hellwalker;
 
+import com.jinxedstudios.hellwalker.entities.HellwalkerEntities;
+import com.jinxedstudios.hellwalker.entities.possessed_scientist.PossessedScientistRenderer;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -27,5 +30,6 @@ public class HellwalkerClient {
         // Some client setup code
         Hellwalker.LOGGER.info("HELLO FROM CLIENT SETUP");
         Hellwalker.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        EntityRenderers.register(HellwalkerEntities.POSSESSED_SCIENTIST.get(), PossessedScientistRenderer::new);
     }
 }

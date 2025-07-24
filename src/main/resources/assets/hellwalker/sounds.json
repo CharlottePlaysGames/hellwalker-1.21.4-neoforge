@@ -1,0 +1,245 @@
+{
+  "pistol_fire": {
+    "subtitle": "sounds.hellwalker.pistol_fire",
+    "sounds": [
+      "hellwalker:guns/pistol/pistol_fire"
+    ]
+  },
+
+  "possessed_scientist_say": {
+    "subtitle": "sounds.hellwalker.possessed_scientist_say",
+    "sounds": [
+      "hellwalker:demon/possessed_scientist/say1",
+      "hellwalker:demon/possessed_scientist/say2",
+      "hellwalker:demon/possessed_scientist/say3"
+    ]
+  },
+  "possessed_scientist_hurt": {
+    "subtitle": "sounds.hellwalker.possessed_scientist_hurt",
+    "sounds": [
+      "hellwalker:demon/possessed_scientist/hurt1",
+      "hellwalker:demon/possessed_scientist/hurt2"
+    ]
+  },
+  "possessed_scientist_death": {
+    "subtitle": "sounds.hellwalker.possessed_scientist_death",
+    "sounds": [
+      "hellwalker:demon/possessed_scientist/death"
+    ]
+  },
+  "possessed_scientist_step": {
+    "subtitle": "sounds.hellwalker.possessed_scientist_step",
+    "sounds": [
+      "hellwalker:demon/possessed_scientist/step1",
+      "hellwalker:demon/possessed_scientist/step2",
+      "hellwalker:demon/possessed_scientist/step3",
+      "hellwalker:demon/possessed_scientist/step4",
+      "hellwalker:demon/possessed_scientist/step5"
+    ]
+  },
+
+
+  "hellwalker": {
+    "subtitle": "sounds.hellwalker.music.hellwalker",
+    "sounds": [
+      "hellwalker:music/hellwalker"
+    ],
+    "volume": 1
+  },
+  "argent_energy": {
+    "subtitle": "sounds.hellwalker.music.argent_energy",
+    "sounds": [
+      "hellwalker:music/argentenergy"
+    ],
+    "volume": 1
+  },
+  "at_dooms_gate": {
+    "subtitle": "sounds.hellwalker.music.at_dooms_gate",
+    "sounds": [
+      "hellwalker:music/atdoomsgate"
+    ],
+    "volume": 1
+  },
+  "authorization_olivia_pierce": {
+    "subtitle": "sounds.hellwalker.music.authorization_olivia_pierce",
+    "sounds": [
+      "hellwalker:music/authorizationoliviapierce"
+    ],
+    "volume": 1
+  },
+  "bfg_division": {
+    "subtitle": "sounds.hellwalker.music.bfg_division",
+    "sounds": [
+      "hellwalker:music/bfgdivision"
+    ],
+    "volume": 1
+  },
+  "biowaves": {
+    "subtitle": "sounds.hellwalker.music.biowaves",
+    "sounds": [
+      "hellwalker:music/biowaves"
+    ],
+    "volume": 1
+  },
+  "cyberdemon": {
+    "subtitle": "sounds.hellwalker.music.cyberdemon",
+    "sounds": [
+      "hellwalker:music/cyberdemon"
+    ],
+    "volume": 1
+  },
+  "dahkma": {
+    "subtitle": "sounds.hellwalker.music.dahkma",
+    "sounds": [
+      "hellwalker:music/dahkma"
+    ],
+    "volume": 1
+  },
+  "damnation": {
+    "subtitle": "sounds.hellwalker.music.damnation",
+    "sounds": [
+      "hellwalker:music/damnation"
+    ],
+    "volume": 1
+  },
+  "deathandexhale": {
+    "subtitle": "sounds.hellwalker.music.demigod",
+    "sounds": [
+      "hellwalker:music/dogma"
+    ],
+    "volume": 1
+  },
+  "doom": {
+    "subtitle": "sounds.hellwalker.music.doom",
+    "sounds": [
+      "hellwalker:music/doom"
+    ],
+    "volume": 1
+  },
+  "dr_samuel_hayden": {
+    "subtitle": "sounds.hellwalker.music.dr_samuel_hayden",
+    "sounds": [
+      "hellwalker:music/drsamuelhayden"
+    ],
+    "volume": 1
+  },
+  "flesh_and_metal": {
+    "subtitle": "sounds.hellwalker.music.flesh_and_metal",
+    "sounds": [
+      "hellwalker:music/fleshandmetal"
+    ],
+    "volume": 1
+  },
+  "harbinger": {
+    "subtitle": "sounds.hellwalker.music.harbinger",
+    "sounds": [
+      "hellwalker:music/harbinger"
+    ],
+    "volume": 1
+  },
+  "impure_spectrum": {
+    "subtitle": "sounds.hellwalker.music.impure_spectrum",
+    "sounds": [
+      "hellwalker:music/impurespectrum"
+    ],
+    "volume": 1
+  },
+  "incantation": {
+    "subtitle": "sounds.hellwalker.music.incantation",
+    "sounds": [
+      "hellwalker:music/incantation"
+    ],
+    "volume": 1
+  },
+  "lazarus_waves": {
+    "subtitle": "sounds.hellwalker.music.lazarus_waves",
+    "sounds": [
+      "hellwalker:music/lazaruswaves"
+    ],
+    "volume": 1
+  },
+  "mastermind": {
+    "subtitle": "sounds.hellwalker.music.mastermind",
+    "sounds": [
+      "hellwalker:music/mastermind"
+    ],
+    "volume": 1
+  },
+  "residual": {
+    "subtitle": "sounds.hellwalker.music.residual",
+    "sounds": [
+      "hellwalker:music/residual"
+    ],
+    "volume": 1
+  },
+  "rip_and_tear": {
+    "subtitle": "sounds.hellwalker.music.rip_and_tear",
+    "sounds": [
+      "hellwalker:music/ripandtear"
+    ],
+    "volume": 1
+  },
+  "rust_dust_and_guts": {
+    "subtitle": "sounds.hellwalker.music.rust_dust_and_guts",
+    "sounds": [
+      "hellwalker:music/rustdustandguts"
+    ],
+    "volume": 1
+  },
+  "skullhacker": {
+    "subtitle": "sounds.hellwalker.music.skullhacker",
+    "sounds": [
+      "hellwalker:music/skullhacker"
+    ],
+    "volume": 1
+  },
+  "credits": {
+    "subtitle": "sounds.hellwalker.music.credits",
+    "sounds": [
+      "hellwalker:music/thefinaltestament"
+    ],
+    "volume": 1
+  },
+  "the_stench": {
+    "subtitle": "sounds.hellwalker.music.the_stench",
+    "sounds": [
+      "hellwalker:music/thestench"
+    ],
+    "volume": 1
+  },
+  "ties_that_bind": {
+    "subtitle": "sounds.hellwalker.music.ties_that_bind",
+    "sounds": [
+      "hellwalker:music/tiesthatbind"
+    ],
+    "volume": 1
+  },
+  "transistor_fist": {
+    "subtitle": "sounds.hellwalker.music.transistor_fist",
+    "sounds": [
+      "hellwalker:music/transistorfist"
+    ],
+    "volume": 1
+  },
+  "uac_report_file": {
+    "subtitle": "sounds.hellwalker.music.uac_report_file",
+    "sounds": [
+      "hellwalker:music/uacreportfile"
+    ],
+    "volume": 1
+  },
+  "vega_core": {
+    "subtitle": "sounds.hellwalker.music.vega_core",
+    "sounds": [
+      "hellwalker:music/vegacore"
+    ],
+    "volume": 1
+  },
+  "vega_death": {
+    "subtitle": "sounds.hellwalker.music.vega_death",
+    "sounds": [
+      "hellwalker:music/vegadeath"
+    ],
+    "volume": 1
+  }
+}
