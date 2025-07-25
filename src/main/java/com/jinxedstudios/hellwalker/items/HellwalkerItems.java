@@ -23,7 +23,8 @@ public class HellwalkerItems {
     public static final DeferredItem<Item> DATA_LOG = ITEMS.registerSimpleItem("data_log", new Item.Properties());
     public static final DeferredItem<Item> POSSESSED_SCIENTIST_SPAWN_EGG = ITEMS.registerItem("possessed_scientist_spawn_egg",
             (properties) -> new SpawnEggItem(HellwalkerEntities.POSSESSED_SCIENTIST.get(), properties));
-  //  public static final DeferredItem<Item> UNWILLING_SPAWN_EGG = ITEMS.register("unwilling_spawn_egg", () -> new DeferredSpawnEggItem(HellwalkerEntities.UNWILLING, 0xffffff, 0xffffff, new Item.Properties()));
+    public static final DeferredItem<Item> UNWILLING_SPAWN_EGG = ITEMS.registerItem("unwilling_spawn_egg",
+            (properties) -> new SpawnEggItem(HellwalkerEntities.UNWILLING.get(), properties));
     //public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
 
 

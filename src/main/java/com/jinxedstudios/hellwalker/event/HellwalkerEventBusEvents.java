@@ -4,6 +4,7 @@ import com.jinxedstudios.hellwalker.Hellwalker;
 import com.jinxedstudios.hellwalker.entities.*;
 import com.jinxedstudios.hellwalker.entities.possessed_scientist.PossessedScientistEntity;
 import com.jinxedstudios.hellwalker.entities.possessed_scientist.PossessedScientistModel;
+import com.jinxedstudios.hellwalker.entities.unwilling.UnwillingEntity;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
@@ -20,6 +21,7 @@ public class HellwalkerEventBusEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(HellwalkerEntities.POSSESSED_SCIENTIST.get(), PossessedScientistEntity.createAttributes().build());
+        event.put(HellwalkerEntities.UNWILLING.get(), UnwillingEntity.createAttributes().build());
     }
 
 }

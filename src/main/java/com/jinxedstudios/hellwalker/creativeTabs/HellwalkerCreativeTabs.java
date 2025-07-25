@@ -42,7 +42,7 @@ public class HellwalkerCreativeTabs {
             .icon(() -> HellwalkerItems.POSSESSED_SCIENTIST_SPAWN_EGG.get().getDefaultInstance())
            .displayItems((parameters, output) -> {
                output.accept(HellwalkerItems.POSSESSED_SCIENTIST_SPAWN_EGG.get());
-    //            output.accept(HellwalkerItems.UNWILLING_SPAWN_EGG.get());
+                output.accept(HellwalkerItems.UNWILLING_SPAWN_EGG.get());
            }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> HELLWALKER_WEAPONS = CREATIVE_MODE_TABS.register("hellwalker_weapons", () -> CreativeModeTab.builder()
