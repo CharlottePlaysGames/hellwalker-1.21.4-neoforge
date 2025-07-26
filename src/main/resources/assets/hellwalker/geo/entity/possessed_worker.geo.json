@@ -1,0 +1,75 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "possessed_scientist",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "upper_half",
+					"parent": "possessed_scientist",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "head",
+					"parent": "upper_half",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0]},
+						{"origin": [-4, 23.8, -4.2], "size": [8, 8, 8], "inflate": 0.5, "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "upper_half",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 32]},
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.25, "uv": [32, 0]},
+						{"origin": [3, 21, -1.9], "size": [2, 3, 3.8], "uv": [54, 55]},
+						{"origin": [-3, 17, -3], "size": [6, 6, 1], "uv": [44, 48]},
+						{"origin": [-3.3, 17, 2], "size": [6.6, 7, 1], "uv": [30, 48]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "upper_half",
+					"pivot": [-5, 22, 0],
+					"cubes": [
+						{"origin": [-7, 12, -2], "size": [3, 12, 4], "uv": [16, 48]},
+						{"origin": [-7, 12, -2], "size": [3, 12, 4], "inflate": 0.25, "uv": [48, 16]},
+						{"origin": [-8, 21, -1.8], "size": [2, 5, 3.6], "uv": [44, 55]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "possessed_scientist",
+					"pivot": [1.9, 12, 0],
+					"cubes": [
+						{"origin": [0, 0, -2], "size": [4, 12, 4], "uv": [32, 16]},
+						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.25, "uv": [0, 48]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "possessed_scientist",
+					"pivot": [-1.9, 12, 0],
+					"cubes": [
+						{"origin": [-4, 0, -2], "size": [4, 12, 4], "uv": [24, 32]},
+						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.25, "uv": [40, 32]}
+					]
+				}
+			]
+		}
+	]
+}
