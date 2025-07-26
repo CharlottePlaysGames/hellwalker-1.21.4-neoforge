@@ -2,14 +2,13 @@ package com.jinxedstudios.hellwalker.event;
 
 import com.jinxedstudios.hellwalker.Hellwalker;
 import com.jinxedstudios.hellwalker.entities.*;
+import com.jinxedstudios.hellwalker.entities.hellmarked_human_skull.HellmarkedHumanSkullEntity;
 import com.jinxedstudios.hellwalker.entities.possessed_scientist.PossessedScientistEntity;
-import com.jinxedstudios.hellwalker.entities.possessed_scientist.PossessedScientistModel;
 import com.jinxedstudios.hellwalker.entities.unwilling.UnwillingEntity;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
-import net.neoforged.neoforge.event.entity.EntityInvulnerabilityCheckEvent;
 
 @EventBusSubscriber(modid = Hellwalker.MODID)
 public class HellwalkerEventBusEvents {
@@ -22,6 +21,7 @@ public class HellwalkerEventBusEvents {
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(HellwalkerEntities.POSSESSED_SCIENTIST.get(), PossessedScientistEntity.createAttributes().build());
         event.put(HellwalkerEntities.UNWILLING.get(), UnwillingEntity.createAttributes().build());
+        event.put(HellwalkerEntities.HELLMARKED_HUMAN_SKULL.get(), HellmarkedHumanSkullEntity.createAttributes().build());
     }
 
 }

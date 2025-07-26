@@ -1,6 +1,7 @@
 package com.jinxedstudios.hellwalker.entities;
 
 import com.jinxedstudios.hellwalker.Hellwalker;
+import com.jinxedstudios.hellwalker.entities.hellmarked_human_skull.HellmarkedHumanSkullEntity;
 import com.jinxedstudios.hellwalker.entities.possessed_scientist.PossessedScientistEntity;
 import com.jinxedstudios.hellwalker.entities.unwilling.UnwillingEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -22,15 +23,22 @@ public class HellwalkerEntities {
 
      public static final Supplier<EntityType<PossessedScientistEntity>> POSSESSED_SCIENTIST =
             ENTITY_TYPES.register("possessed_scientist", () -> EntityType.Builder.of(PossessedScientistEntity::new, MobCategory.MONSTER)
-                    .sized(1f, 1.8f)
+                    .sized(0.6f, 1.98f)
                     .build(POSSESSED_SCIENTIST_KEY));
 
     public static ResourceKey<EntityType<?>> UNWILLING_KEY = ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.withDefaultNamespace("unwilling"));
 
     public static final Supplier<EntityType<UnwillingEntity>> UNWILLING =
             ENTITY_TYPES.register("unwilling", () -> EntityType.Builder.of(UnwillingEntity::new, MobCategory.MONSTER)
-                    .sized(1f, 1.8f)
+                    .sized(0.6f, 1.98f)
                     .build(UNWILLING_KEY));
+    public static ResourceKey<EntityType<?>> HELLMARKED_HUMAN_SKULL_KEY = ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.withDefaultNamespace("hellmarked_human_skull"));
+
+    public static final Supplier<EntityType<HellmarkedHumanSkullEntity>> HELLMARKED_HUMAN_SKULL =
+            ENTITY_TYPES.register("hellmarked_human_skull", () -> EntityType.Builder.of(HellmarkedHumanSkullEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .build(HELLMARKED_HUMAN_SKULL_KEY));
+
 
 
     public static void register(IEventBus eventBus) {

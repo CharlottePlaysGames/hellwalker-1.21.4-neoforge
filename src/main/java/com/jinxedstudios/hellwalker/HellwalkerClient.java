@@ -1,6 +1,7 @@
 package com.jinxedstudios.hellwalker;
 
 import com.jinxedstudios.hellwalker.entities.HellwalkerEntities;
+import com.jinxedstudios.hellwalker.entities.hellmarked_human_skull.HellmarkedHumanSkullRenderer;
 import com.jinxedstudios.hellwalker.entities.possessed_scientist.PossessedScientistRenderer;
 import com.jinxedstudios.hellwalker.entities.unwilling.UnwillingRenderer;
 import net.minecraft.client.Minecraft;
@@ -33,5 +34,7 @@ public class HellwalkerClient {
         Hellwalker.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         EntityRenderers.register(HellwalkerEntities.POSSESSED_SCIENTIST.get(), PossessedScientistRenderer::new);
         EntityRenderers.register(HellwalkerEntities.UNWILLING.get(), UnwillingRenderer::new);
+        EntityRenderers.register(HellwalkerEntities.HELLMARKED_HUMAN_SKULL.get(), HellmarkedHumanSkullRenderer::new);
+
     }
 }

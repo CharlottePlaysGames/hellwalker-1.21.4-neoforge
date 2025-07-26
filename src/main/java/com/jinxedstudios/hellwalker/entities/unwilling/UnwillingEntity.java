@@ -153,4 +153,21 @@ public class UnwillingEntity extends Monster implements GeoEntity {
     protected SoundEvent getDeathSound() {
         return HellwalkerSounds.POSSESSED_SCIENTIST_DEATH.get();
     }
+    @Override
+    public boolean isAffectedByFluids() {
+        return false;  // Prevents slowing and damage from fluids like water.
+    }
+    @Override
+    public float maxUpStep() {
+        return 2.0f;
+    }
+    @Override
+    public boolean isPushable() {
+        return false;
+    }
+
+    @Override
+    public boolean canBeCollidedWith() {
+        return true;
+    }
 }

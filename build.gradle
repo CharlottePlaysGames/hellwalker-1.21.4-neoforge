@@ -24,6 +24,7 @@ repositories {
         content {
             includeGroup("software.bernie.geckolib")
         }
+
     }
     maven {
         name = "SmartBrainLib (SBL) Maven Repo"
