@@ -1,9 +1,11 @@
 package com.jinxedstudios.hellwalker.entities.possessed_scientist;
 
 import com.jinxedstudios.hellwalker.sounds.HellwalkerSounds;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -19,6 +21,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
@@ -26,6 +29,8 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.animation.*;
+
+import java.util.Random;
 
 public class PossessedScientistEntity extends Monster implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
@@ -74,6 +79,8 @@ public class PossessedScientistEntity extends Monster implements GeoEntity {
         controllerRegistrar.add(new AnimationController<>(this, "movementController", 0, this::movementPredicate).transitionLength(4));
 
         controllerRegistrar.add(new AnimationController<>(this, "attackController", 0, this::attackPredicate).transitionLength(2));
+
+        controllerRegistrar.add(new AnimationController<>(this, "landingController", 0, this::landingPredicate).transitionLength(2));
         }
     private <T extends GeoAnimatable> PlayState movementPredicate(AnimationState<T> state) {
         double dx = this.getX() - this.xOld;
@@ -123,7 +130,20 @@ public class PossessedScientistEntity extends Monster implements GeoEntity {
 
         return PlayState.CONTINUE;
     }
+    private <T extends GeoAnimatable> PlayState landingPredicate(AnimationState<T> state) {
+        if (this.justLanded) {
+            state.getController().forceAnimationReset();
+            state.getController().setAnimation(
+                    RawAnimation.begin().then("animation.possessed_scientist.land", Animation.LoopType.PLAY_ONCE)
+            );
+            this.justLanded = false; // Reset after animation plays
+            return PlayState.CONTINUE;
+        }
 
+
+        return PlayState.CONTINUE;
+    }
+    private boolean justLanded = false;
     @Override
     public void aiStep() {
         super.aiStep();
@@ -172,4 +192,12 @@ public class PossessedScientistEntity extends Monster implements GeoEntity {
     public boolean canBeCollidedWith() {
         return true;
     }
+
+    @Override
+    public void tick() {
+        super.tick();
+
+    }
+
 }
+
